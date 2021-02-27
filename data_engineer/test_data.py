@@ -8,15 +8,8 @@ __all__ = ['analisis_serie_tiempo']
 
 def analisis_serie_tiempo(file_name):
 
-    """
-    esto es para leer el archivo que se llama: "test_data.pkl"
-    """
     df_serie_tiempo = pd.read_pickle(file_name)
 
-    """
-    imprimir por pantalla la variable df_serie_tiempo. En este caso, df_serie_tiempo es un dataframe 
-    con los datos del archivo "test_data.pkl"
-    """
     print(df_serie_tiempo)
     
     descripcion_dataframe = df_serie_tiempo.describe()
@@ -63,10 +56,7 @@ def analisis_serie_tiempo(file_name):
     return df_serie_tiempo, descripcion_dataframe, index_data_null
 
 def main():
-    """
-    definir una variable como file_name y a esta varible se le ASIGNA (=) el valor
-    de un STRING "test_data.pkl"
-    """
+
     file_name = "test_data.pkl"
     df, descripcion_dataframe, index_data_null = ta.analisis_serie_tiempo(file_name)
     
