@@ -31,10 +31,6 @@ colors = {
 """
 #-----------------------------------------------------------------------------------
 
-"""
-definir una variable como file_name y a esta varible se le ASIGNA (=) el valor
-de un STRING "test_data.pkl"
-"""
 file_name = "test_data.pkl"
 
 
